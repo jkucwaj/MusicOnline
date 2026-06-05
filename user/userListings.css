@@ -1,0 +1,178 @@
+.user-listings-page {
+  min-height: 100vh;
+  padding: 40px 0 70px;
+  background:
+    radial-gradient(circle at top left, rgba(93, 42, 148, 0.18), transparent 35%),
+    linear-gradient(180deg, #12061f 0%, #090312 100%);
+}
+
+
+.user-listings-header {
+  width: 85%;
+  max-width: 980px;
+  margin: 0 auto 24px;
+}
+
+.user-listings-header h1 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.user-listings-sub {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 16px;
+}
+
+
+.user-listings-table-section {
+  width: 85%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.user-listings-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(177, 138, 255, 0.18);
+  border-radius: 20px;
+  background: rgba(48, 24, 82, 0.55);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(4px);
+}
+
+
+.user-listings-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+.user-listings-table thead {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.user-listings-table th {
+  padding: 18px 16px;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.user-listings-table td {
+  padding: 16px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.user-listings-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.user-listings-table th:nth-child(3),
+.user-listings-table td:nth-child(3) {
+  width: 120px;
+  white-space: nowrap;
+}
+
+.user-listings-table th:nth-child(4),
+.user-listings-table td:nth-child(4) {
+  width: 220px;
+  white-space: nowrap;
+}
+
+
+.actions-cell {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.action-link {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.edit-link {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.edit-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.delete-link {
+  background: rgba(255, 80, 80, 0.10);
+  color: #ffb3b3;
+  border: 1px solid rgba(255, 80, 80, 0.25);
+}
+
+.delete-link:hover {
+  background: rgba(255, 80, 80, 0.18);
+  color: #ffffff;
+}
+
+
+.user-listings-bottom {
+  margin-top: 22px;
+}
+
+.add-listing-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  background: #46e287;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.add-listing-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(70, 226, 135, 0.22);
+}
+
+
+.no-results {
+  text-align: center;
+  padding: 28px 16px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+@media (max-width: 768px) {
+  .user-listings-page {
+    padding: 30px 0 50px;
+  }
+
+  .user-listings-header,
+  .user-listings-table-section {
+    width: 92%;
+  }
+
+  .user-listings-header h1 {
+    font-size: 34px;
+  }
+
+  .user-listings-table th,
+  .user-listings-table td {
+    padding: 13px 12px;
+    font-size: 14px;
+  }
+
+  .actions-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
